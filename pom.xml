@@ -103,6 +103,8 @@
         <aircompressor.version>0.18</aircompressor.version>
         <google.jsr305.version>3.0.2</google.jsr305.version>
         <netty.version>4.1.47.Final</netty.version>
+        <grpc.version>1.35.0</grpc.version>
+        <tomcat.verson>6.0.53</tomcat.verson>
         <jmh.version>1.27</jmh.version>
         <yandex-clickhouse-jdbc.version>0.2.5</yandex-clickhouse-jdbc.version>
         <mockito.version>3.6.28</mockito.version>
@@ -182,6 +184,26 @@
                 <groupId>io.netty</groupId>
                 <artifactId>netty-all</artifactId>
                 <version>${netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.grpc</groupId>
+                <artifactId>grpc-netty-shaded</artifactId>
+                <version>${grpc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.grpc</groupId>
+                <artifactId>grpc-protobuf</artifactId>
+                <version>${grpc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.grpc</groupId>
+                <artifactId>grpc-stub</artifactId>
+                <version>${grpc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.tomcat</groupId>
+                <artifactId>annotations-api</artifactId>
+                <version>${tomcat.verson}</version>
             </dependency>
             <dependency>
                 <groupId>org.openjdk.jmh</groupId>
