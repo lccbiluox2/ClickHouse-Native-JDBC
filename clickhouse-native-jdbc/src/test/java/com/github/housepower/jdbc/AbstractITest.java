@@ -75,7 +75,6 @@ public abstract class AbstractITest implements Serializable {
             .withExposedPorts(CLICKHOUSE_GRPC_PORT)
             .withCopyFileToContainer(MountableFile.forClasspathResource("grpc_config.xml"), "/etc/clickhouse-server/config.d/grpc_config.xml");
 
-
     protected static String CK_HOST;
     protected static String CK_IP;
     protected static int CK_PORT;

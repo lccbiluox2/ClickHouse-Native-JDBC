@@ -110,7 +110,8 @@
         <jmh.version>1.27</jmh.version>
         <yandex-clickhouse-jdbc.version>0.2.5</yandex-clickhouse-jdbc.version>
         <mockito.version>3.6.28</mockito.version>
-        <guava.version>16.0.1</guava.version>
+        <!-- TODO - may not compatible with spark -->
+        <guava.version>23.2-jre</guava.version>
         <jackson.version>2.10.3</jackson.version>
         <slf4j.version>1.7.30</slf4j.version>
         <scala.version>2.12.10</scala.version>
@@ -415,6 +416,8 @@
                             <goals>
                                 <goal>compile</goal>
                                 <goal>compile-custom</goal>
+                                <goal>test-compile</goal>
+                                <goal>test-compile-custom</goal>
                             </goals>
                         </execution>
                     </executions>

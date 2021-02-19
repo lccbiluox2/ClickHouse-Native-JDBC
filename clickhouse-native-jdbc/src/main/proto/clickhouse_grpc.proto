@@ -15,6 +15,9 @@
 syntax = "proto3";
 
 option java_package = "com.github.housepower.protocol.grpc";
+option java_outer_classname = "CHGrpc";
+option java_multiple_files = true;
+option optimize_for = SPEED;
 
 package clickhouse.grpc;
 
